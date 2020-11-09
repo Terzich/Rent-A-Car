@@ -1,0 +1,51 @@
+<div class="container">
+    <div class=" col-lg-6 justify-content-center">
+        <p class="alert alert-success" *ngIf="message">{{message}}</p>
+        <form #form="ngForm" autocomplete="off" (submit)="onSubmit(form);form.reset()">
+            <div class="form-group">
+            <label for="name">Car name: </label>
+            <input type="text" name="name" #name="ngModel" ngModel class="form-control"
+            placeholder="Name" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="Year">Year of production: </label>
+            <input type="number" name="yearOfProduction" #yearOfProduction="ngModel" ngModel class="form-control"
+            placeholder="Name" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="Year">Horse power: </label>
+            <input type="number" name="horsePower" #horsePower="ngModel" ngModel class="form-control"
+            placeholder="Name" required>>
+        </div>
+        
+        <div class="form-group">
+            <label for="Year">Number of doors: </label>
+            <input type="number" name="numberOfDoors" #numberOfDoors="ngModel" ngModel class="form-control"
+            placeholder="Name" required>
+        </div>
+     
+        <div class="form-group" >
+            <label for="Year">Color: </label>
+            <input type="text" name="color" #color="ngModel" ngModel class="form-control"
+            placeholder="Name" required value="1">
+        </div>
+        
+        <div class="form-group">
+            <label for="Year">Details: </label>
+            <textarea type="text" name="description" #description="ngModel" ngModel class="form-control"
+            placeholder="Name" required></textarea>
+        </div>
+        
+        <button class="btn btn-primary">Save</button>
+    </form>
+</div>
+</div>
+
+
+
+
+
+
+

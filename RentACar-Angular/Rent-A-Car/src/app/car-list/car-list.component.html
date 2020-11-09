@@ -1,0 +1,17 @@
+<div class="container mt-5">
+    <div class="row justify-content-around mt-5 p-3" *ngFor="let car of cars">
+        <div class="col-lg-4">
+            <img src="../../assets/Images/default.png" class="img-fluid">
+        </div>
+        <div class="col-lg-8">
+            <h1 style="text-align: center;">{{car.name}} <span class="btn-rent">RENT</span></h1>
+            <hr>
+            <p class="car-details"><span>Cijena po danu: </span> 125 <br> <span>Boja: </span>{{car.color}} <br> <span>Godina proizvodnje: </span> {{car.yearOfProduction}} </p>
+            <p>{{car.description}}</p>
+        </div>
+
+
+    </div>
+
+
+</div>

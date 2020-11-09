@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+
+    background: #020b57;
+    padding: 20px;
+    display: flex;
+
+}
+ul li{
+    display: inline;
+    padding: 0 50px 0 50px;
+    font-weight: bold;
+    color: white;
+    flex-grow: 1;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+}
+
+ul li a{
+padding: 20px;
+text-decoration: none;
+color: white;
+}
+ul li :hover{
+    background-color: #020731;
+    cursor: pointer;
+    text-decoration: underline;
+
+}
+
+
